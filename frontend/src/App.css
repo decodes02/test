@@ -1,0 +1,393 @@
+/* General Dropdown Container Styling */
+.dropdown-container {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.dropdown-button {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* Adjusts content distribution */
+  width: 120px;
+  /* Define a width for consistent alignment */
+}
+
+.dropdown-button .icon {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+/* Dropdown Content Styling */
+.dropdown-content {
+  display: none;
+  /* Hide the dropdown initially */
+  position: absolute;
+  background-color: white;
+  min-width: 220px;
+  /* Ensure the dropdown is wider than the button */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 1;
+  top: 100%;
+  /* Position it directly below the button */
+  left: 0;
+  /* Align to the left of the button */
+  margin-top: 8px;
+  /* Add some space between the button and dropdown */
+}
+
+/* Show the dropdown on button click */
+.dropdown-container:hover .dropdown-content,
+.dropdown-container:focus-within .dropdown-content {
+  display: block;
+  /* Show the dropdown on hover or focus */
+}
+
+/* Dropdown Sections Styling */
+.dropdown-section {
+  margin-bottom: 15px;
+}
+
+.dropdown-section:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #374151;
+}
+
+.dropdown-section select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.dropdown-section select:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+/* Dropdown Hover & Focus Effects */
+.dropdown-button:hover {
+  border-color: #4f46e5;
+}
+
+.dropdown-content select:hover,
+.dropdown-content select:focus {
+  border-color: #4f46e5;
+}
+
+/* Kanban Board */
+.kanban-board {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px;
+  overflow-x: scroll;
+}
+
+.kanban-column {
+  /* width: 30%; */
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.ticket-card {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  max-width: 400px;
+  height: 140px;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket-id {
+  font-weight: bold;
+}
+
+/* User avatar circle */
+.user-avatar {
+  width: 30px;
+  height: 30px;
+  background-color: #e5e7eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111827;
+  margin-right: 10px;
+}
+
+.ticket-footer {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.priority-indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Priority levels */
+.priority-4 {
+  background-color: red;
+}
+
+.priority-3 {
+  background-color: orange;
+}
+
+.priority-2 {
+  background-color: yellow;
+}
+
+.priority-1 {
+  background-color: green;
+}
+
+.priority-0 {
+  background-color: gray;
+}
+
+.feature-label {
+  background-color: #f4f4f4;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Kanban Column Header */
+.kanban-column-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.status-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.task-count {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.navbar{
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.addbutton{
+  background-color: white;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* width: 120px; */
+    text-decoration: none; /* Removes text underline */
+  color: black; 
+}
+
+a {
+  text-decoration: none; /* Removes text underline for all links */
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+  margin: 0 10%;
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+thead tr {
+  background-color: #f2f2f2;
+  color: #333;
+  text-align: left;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+tbody tr td:last-child {
+  text-align: center;
+}
+
+th {
+  background-color: #779bc1;
+  color: white;
+}
+
+.adduserbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; /* Ensure the modal is on top */
+}
+
+.adduserbox form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  width: 100%;
+  max-width: 400px; /* Ensure form doesn't get too wide */
+}
+
+.adduserbox h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+}
+
+.adduserbox label {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.adduserbox input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.adduserbox input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.adduserbox button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.adduserbox button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.adduserbox button[type="submit"]:disabled {
+  background-color: #ccc; /* Disabled button style */
+}
+
+.adduserbox button[type="button"] {
+  background-color: #f44336;
+  color: white;
+}
+
+.adduserbox p {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.addticketbox {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #808080a3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addticketbox form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.addticketformnew select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  appearance: none; /* Remove default dropdown arrow */
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000" height="14" viewBox="0 0 24 24" width="14"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center; /* Custom dropdown arrow */
+  background-size: 12px; /* Size of the custom arrow */
+}
+
+.addticketformnew select:focus {
+  border-color: #007bff; /* Change to your preferred focus color */
+  outline: none;
+}
+
+.addticketformnew option {
+  padding: 10px; /* Ensures padding within options */
+}
